@@ -1,13 +1,13 @@
 {
-	"poolHost": "bloody.go.ro",
+	"poolHost": "poolHost.com",
 
 	"coin": "Evolution",
 	"symbol": "EvoX",
 	"coinUnits": 1000000000,
-	"coinDecimalPlaces": 3,
+	"coinDecimalPlaces": 9,
 	"coinDifficultyTarget": 120,
-	"blockchainExplorer": "http://explorer.evolutionproject.space/block/{id}",
-	"transactionExplorer": "http://explorer.evolutionproject.space/tx/{id}",
+	"blockchainExplorer": "https://explorer.evolutionproject.space/block/{id}",
+	"transactionExplorer": "https://explorer.evolutionproject.space/tx/{id}",
 	"cnAlgorithm": "randomx",
 	"cnVariant": 2,
 	"cnBlobType": 0,
@@ -30,7 +30,7 @@
 		"enabled": true,
 		"mergedMining": false,
 		"clusterForks": "auto",
-		"poolAddress": "evzE1GcEE59MmzcZvPv3WHU9KqbavCStYfSy4y3xqpwgCQFTBCY3bLN6mBQzuHbCyXhbhzXCjFwzDZmc7C6ZaW4d3fQ16KC7Fx",
+		"poolAddress": "Pool-wallet-address",
 		"intAddressPrefix": "0x60e2",
 		"subAddressPrefix": "0x5e62",
 		"blockRefreshInterval": 300,
@@ -86,7 +86,7 @@
 
 	"payments": {
         	"enabled": true,
-        	"interval": 120,
+        	"interval": 300,
         	"maxAddresses": 5,
         	"mixin": 11,
         	"priority": 0,
@@ -95,7 +95,7 @@
         	"minerPayFee" : true,
         	"minPayment": 5000000000,
         	"maxPayment": null,
-        	"maxTransactionAmount": 50000000000000,
+        	"maxTransactionAmount": 300000000000,
         	"denomination": 100000000
 	},
 
@@ -103,7 +103,7 @@
 		"enabled": true,
 		"interval": 30,
 		"depth": 18,
-		"poolFee": 1,
+		"poolFee": 1.0,
 		"devDonation": 0,
 		"networkFee": 0
 	},
@@ -116,7 +116,7 @@
 		"port": 5555,
 		"blocks": 30,
 		"payments": 30,
-		"password": "admin-pool-password",
+		"password": "admin-pool-pass",
 		"ssl": false,
 		"sslPort": 8119,
 		"sslCert": "./cert.pem",
@@ -126,7 +126,7 @@
 	},
 
 	"zmq": {
-        	"enabled": true,
+        	"enabled": false,
         	"host": "127.0.0.1",
         	"port": 52923
     	},
@@ -144,12 +144,20 @@
 	"redis": {
 		"host": "127.0.0.1",
 		"port": 6379,
-		"auth": null,
 		"db": 0,
 		"cleanupInterval": 15
 	},
 
+
 	"notifications": {
+        	"discordMessage": {
+            	"blockFound": "Block Found by miner ending: %MINER% Well Done ! \n:smile:   <@&(id-of-mention-users)> Block %HEIGHT% mined\n:raised_hand:   Awaiting confirmation",
+            	"blockUnlocked": ":thumbsup:   Block at height %HEIGHT% confirmed | Reward %REWARD% | Effort: %EFFORT%",
+            	"blockOrphaned": ":rage:   Block %HEIGHT% was orphaned by the network",
+            	"payment": ":moneybag:  Pool Paid out: %AMOUNT%"
+        	},
+
+
 		"emailTemplate": "email_templates/default.txt",
 		"emailSubject": {
 			"emailAdded": "Your email was registered",
@@ -243,32 +251,32 @@
 		"pool": {
 			"hashrate": {
 				"enabled": true,
-				"updateInterval": 30,
-				"stepInterval": 60,
+				"updateInterval": 60,
+				"stepInterval": 120,
 				"maximumPeriod": 86400
 			},
 			"miners": {
 				"enabled": true,
-				"updateInterval": 30,
-				"stepInterval": 60,
+				"updateInterval": 60,
+				"stepInterval": 120,
 				"maximumPeriod": 86400
 			},
 			"workers": {
 				"enabled": true,
-				"updateInterval": 30,
-				"stepInterval": 60,
+				"updateInterval": 60,
+				"stepInterval": 120,
 				"maximumPeriod": 86400
 			},
 			"difficulty": {
 				"enabled": true,
-				"updateInterval": 30,
+				"updateInterval": 0,
 				"stepInterval": 60,
 				"maximumPeriod": 604800
 			},
 			"price": {
 				"enabled": true,
-				"updateInterval": 60,
-				"stepInterval": 120,
+				"updateInterval": 120,
+				"stepInterval": 180,
 				"maximumPeriod": 604800
 			},
 			"profit": {
@@ -281,14 +289,14 @@
 		"user": {
 			"hashrate": {
 				"enabled": true,
-				"updateInterval": 30,
-				"stepInterval": 60,
+				"updateInterval": 60,
+				"stepInterval": 120,
 				"maximumPeriod": 86400
 			},
 			"worker_hashrate": {
 				"enabled": true,
-				"updateInterval": 30,
-				"stepInterval": 60,
+				"updateInterval": 60,
+				"stepInterval": 120,
 				"maximumPeriod": 86400
 			},
 			"payments": {
