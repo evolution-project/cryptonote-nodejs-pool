@@ -3,10 +3,10 @@
 @import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 body {  
-  background-color: #f5f5f5;
+  background-color: #262626;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 1.428571429;
-  color: #262626;
+  color: #fff9;
   margin: 0;
   padding: 0;
   margin-bottom: 85px;
@@ -14,13 +14,13 @@ body {
   overflow-y: scroll;
 }
 a {
-  color: #014e71;
+  color: #566e7a;
 }
 a:hover {
-  color: #0274a8;
+  color: #384952;
 }
 hr {
-  border-top-color: #0274a8;
+  border-top-color: #ffffff;
 }
 strong, b {
   font-weight: 500;
@@ -35,7 +35,7 @@ h3,.h3 {
   margin-bottom: 14px;
 }
 code {
-  color: #0274a8;
+  color: #324e5c;
   background-color: #efefef;
   padding: 2px 10px;
   border-radius: 0;
@@ -142,7 +142,7 @@ footer > div{
   z-index: 1000;
 }
 .nav-side-menu .brand {
-  background-color: #014e71;
+  background-color: #354952;
   line-height: 50px;
   display: block;
   text-align: center;
@@ -179,7 +179,7 @@ footer > div{
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
   border-left: 3px solid #03a9f4;
-  background-color: #0274a8;
+  background-color: #384952;
 }
 .nav-side-menu ul .active a,
 .nav-side-menu li .active a {
@@ -187,7 +187,7 @@ footer > div{
 }
 .nav-side-menu ul .sub-menu li.active,
 .nav-side-menu li .sub-menu li.active {
-  color: #03a9f4;
+  color: #384952;
 }
 .nav-side-menu ul .sub-menu li a,
 .nav-side-menu li .sub-menu li a {
@@ -196,11 +196,11 @@ footer > div{
 }
 .nav-side-menu ul .sub-menu li.active a,
 .nav-side-menu li .sub-menu li.active a {
-  color: #03a9f4;
+  color: #384952;
 }
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
-  background-color: #181c20;
+  background-color: #fafdff;
   border: none;
   line-height: 28px;
   border-bottom: 1px solid #23282e;
@@ -208,7 +208,7 @@ footer > div{
 }
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
-  background-color: #020203;
+  background-color: #9b9b9b;
 }
 .nav-side-menu ul .sub-menu li:before,
 .nav-side-menu li .sub-menu li:before {
@@ -222,7 +222,7 @@ footer > div{
 .nav-side-menu li {
   padding-left: 0;
   border-left: 3px solid #2e353d;
-  border-bottom: 1px solid #23282e;
+  border-bottom: 1px solid #949393;
 }
 .nav-side-menu li a {
   text-decoration: none;
@@ -237,8 +237,8 @@ footer > div{
   padding-right: 20px;
 }
 .nav-side-menu li:hover {
-  border-left: 3px solid #03a9f4;
-  background-color: #0274a8;
+  border-left: 3px solid #a7a7a7;
+  background-color: #3c5663;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -282,7 +282,7 @@ footer > div{
 
 /* Top Bar */
 #top-bar { 
-  background-color: #0274a8;
+  background-color: #262626;
   line-height: 50px;
   display: block;
   font-size: 17px;
@@ -380,7 +380,7 @@ footer > div{
 .table > thead > tr.success > th,
 .table > tbody > tr.success > th,
 .table > tfoot > tr.success > th {
-  background-color: #000000;
+  background-color: #ec0606;
 }
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover,
@@ -390,7 +390,7 @@ footer > div{
   background-color: #000000;
 }
 .table > thead > tr > th {
-  color: #014e71;
+  color: #c5c5c5;
   border-bottom-color: #014e71;
   font-weight: 400;
 }
@@ -400,7 +400,7 @@ footer > div{
 }
 .table > tbody > tr:hover td,
 .table > tbody > tr:hover th {
-  background-color: rgba(3, 169, 244, 0.3);
+  background-color: rgba(68, 68, 68, 0.733);
 }
 .table > tbody > tr > td {
   border-top-color: #c9e0e9;
@@ -412,7 +412,7 @@ table th.sort:hover{
 /* jQuery sparkline tooltip */
 .jqstooltip {
   border: none !important;
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(162, 96, 248, 0.8) !important;
   border-radius: 2px !important;
   margin-top: -20px !important;
   /* Override Bootstrap defaults to fix jQuery.Sparkline tooltips appearance */
@@ -435,10 +435,10 @@ table th.sort:hover{
   width: 100%;
   margin: 0;
   padding: 0;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 5px 0 rgb(255, 255, 255);
   border-radius: 3px;
-  color: rgba(0, 0, 0, 0.87);
-  background: #fff;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(39, 39, 39);
 }
 
 .card table, .card .table {
@@ -447,8 +447,8 @@ table th.sort:hover{
 
 /* Info box */
 .infoBox {
-  background-color: #03a9f4;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  background-color: #6f3bff;
+  box-shadow: 0 2px 5px 0 rgb(255, 255, 255);
   height: 90px;  
   cursor: default;
   position: relative;
@@ -487,7 +487,7 @@ table th.sort:hover{
   font-weight: 700;
   margin-top: -4px;
   color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 0px 0px 0px rgb(255, 255, 255);
 }
 .infoBox .content .value .smallText {
   font-size: 16px;
@@ -508,8 +508,8 @@ table th.sort:hover{
 
 /* Hash info box */
 .hashInfo {
-  background-color: #014e71;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  background-color: #222b30;
+  box-shadow: 0 3px 5px 0 rgb(255, 255, 255);
   cursor: default;
   padding: 15px;
   border-radius: 3px;
@@ -548,8 +548,8 @@ table th.sort:hover{
 
 /* Slush payment info box */
 .slushInfo {
-  background-color: #014e71;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  background-color: #ce3c0f;
+  box-shadow: 0 1px 4px 0 rgb(255, 254, 254);
   cursor: default;
   padding: 15px;
   border-radius: 3px;
@@ -579,14 +579,14 @@ table th.sort:hover{
 
 /* Pool Statistics */
 .stats > div:not(#addressError) {
-  color: #262626; 
+  color: #903bfffb; 
   padding: 10px 0px;
 }
 .stats > div:not(#addressError).marketFooter {
   padding: 5px 0;
 }
 .stats > div:not(#addressError) > i.fa {
-  color: #0274a8;
+  color: #b7b4bd;
   font-size: 21px;
   width: 30px;
   text-align: center;
@@ -594,7 +594,7 @@ table th.sort:hover{
 .stats > div:not(#addressError) > span:not(.input-group-btn):first-of-type {
   font-weight: 500;
   padding: 0 2px;
-  color: #0274a8;
+  color: #cccbcb;
 }
 
 /* Pool and Worker Charts */

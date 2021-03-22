@@ -5,11 +5,11 @@
         <div class="card padding-l-10 padding-r-10">
             <div class="stats">
                 <div><i class="fa fa-cloud"></i> <span data-tkey="miningPoolHost">Mining Pool Address</span>: <span id="miningPoolHost"></span></div>
-                <div><i class="fa fa-cubes"></i> <span data-tkey="cnAlgorithm">Algorithm</span>: <span id="cnAlgorithm"></span></div>
+                <div><i class="fa fa-cubes"></i> <span data-tkey="cnAlgorithm">Algorithm</span>: <!--<span id="cnAlgorithm"></span>-->rx/arq</div>
             </div>
         </div>
 
-        <h4 class="push-up-15"><span data-tkey="username">Username<span></h4>
+        <h4 class="push-up-15"><span data-tkey="username">Wallet Address Setup<span></h4>
         <div class="card padding-l-10 padding-r-10">
             <div class="stats">
                 <div><i class="fa fa-key"></i> <span data-tkey="usernameDesc">This is your wallet address</span></div>
@@ -21,10 +21,11 @@
         <h4 class="push-up-15"><span data-tkey="password">Password</span></h4>
         <div class="card padding-l-10 padding-r-10">
                 <div class="stats">
-                    <div><i class="fa fa-key"></i> <span data-tkey="usernameDesc2">Use your <strong  id="paymentChildCoins">Iridium OR Nibble wallet address</strong> in the password field for merged mining.</span></div>
-                    <div id="paymentId"><i class="fa fa-exchange"></i> <span data-tkey="paymentId">Exchange Payment ID</span>: <span><u data-tkey="childaddress">child address</u><span id="paymentIdSeparator">+</span><u data-tkey="addrPaymentId">paymentID</u></span></div>
-                    <div><i class="fa fa-server"></i> <span data-tkey="fixedDiff2">Worker Name</span>: <span><u data-tkey="childaddress">child-address</u><span id="fixedDiffSeparator2">@</span><u data-tkey="addrDiff2">workerName</u></span></div>
-                    <div><i class="fa fa-exchange fa-server"></i> <span data-tkey="fixedDiff2PaymentId">Payment ID and Worker Name</span>: <span><u data-tkey="childaddress">child-address</u>+<u data-tkey="">paymentID</u><span id="fixedDiffSeparator2">@</span><u data-tkey="addrDiff2">workerName</u></span></div>
+                <!--    <div><i class="fa fa-key"></i> <span data-tkey="usernameDesc2">Use your <strong  id="paymentChildCoins">Iridium OR Nibble wallet address</strong> in the password field for merged mining.</span></div>-->
+                    <div><i class="fa fa-key"></i> <span data-tkey="usernameDesc3">Use pass field to set your miner/s name/s.</span></div>
+                    <div id="paymentId"><i class="fa fa-exchange"></i> <span data-tkey="paymentId">Exchange Payment ID</span>: <span><u data-tkey="childaddress">address</u><span id="paymentIdSeparator">+</span><u data-tkey="addrPaymentId">paymentID</u></span></div>
+                    <div><i class="fa fa-server"></i> <span data-tkey="fixedDiff2">Pass Field</span>: <span><u data-tkey="childaddress"></u><span id="fixedDiffSeparator2">@</span><u data-tkey="addrDiff2">workerName</u></span></div>
+<!--                    <div><i class="fa fa-exchange fa-server"></i> <span data-tkey="fixedDiff2PaymentId">Payment ID and Worker Name</span>: <span><u data-tkey="childaddress">address</u>+<u data-tkey="">paymentID</u><span id="fixedDiffSeparator2"></u></span></div>  -->
                 </div>
         </div>
     </div>
@@ -59,7 +60,7 @@
 <!-- Mining Applications and Configuration Generator -->
 <h3><span data-tkey="miningApps">Mining Applications</span></h3>
 
-<!-- Configuration Generator -->
+<!-- Configuration Generator --
 <div class="card padding-15">
     <p><span data-tkey="configGeneratorDesc">Generate your custom configuration to mine on our pool</span></p>
     <div id="configGenerator" class="row">
@@ -88,7 +89,7 @@
                 <input class="form-control" id="gAddress" type="text" data-tplaceholder="addressField" placeholder="Wallet Address" required="required" />
             </div>
         </div>
-        <div class="col-sm-6 col-xs-12">
+<!--        <div class="col-sm-6 col-xs-12">
             <div class="input-group push-down-5">
                 <span class="input-group-addon"><i class="fa fa-exchange"></i></span>
                 <input class="form-control" id="gPaymentID" type="text" data-tplaceholder="paymentIdField" placeholder="Parent Payment ID for exchanges (optional)" />
@@ -105,7 +106,7 @@
                 <span class="input-group-addon"><i class="fa fa-exchange"></i></span>
                 <input class="form-control" id="gChildPaymentID" type="text" data-tplaceholder="childPaymentIdField" placeholder="Child Payment ID for exchanges (optional)" />
             </div>
-        </div>
+        </div>  --
         <div class="col-sm-6 col-xs-12">
             <div class="input-group push-down-5">
                 <span class="input-group-addon"><i class="fa fa-wrench"></i></span>
@@ -121,6 +122,7 @@
 <!-- Mining Applications -->
 <div class="card push-up-5">
     <div id="miningApps" class="table-responsive">
+
         <table class="table">
             <thead>
             <tr>
@@ -135,35 +137,33 @@
 	    
 	    <!-- XMR Stak -->
             <tr class="appInfo">
-                <td class="miningAppTitle">XMR Stak</td>
-                <td>CPU & GPU (AMD/NVIDIA)</td>
-                <td>Easy to use CPU + GPU Mining App</td>
-                <td><a class="btn btn-success" target="_blank" href="https://github.com/fireice-uk/xmr-stak/releases/latest"><span data-tkey="download">Download</span></a></td>
-                <td><a class="btn btn-default" role="button" data-toggle="collapse" href="#xmrstak" aria-expanded="true" aria-controls="collapseExample"><span data-tkey="showConfig">See more</span></a></td>
+                <td class="miningAppTitle">XMRig</td>
+                <td>CPU </td>
+                <td>Click on "See More" button for ex. of config in xmrig</td>
+                <td><a class="btn btn-success" target="_blank" href="https://github.com/xmrig/xmrig/releases/latest"><span data-tkey="download">Download</span></a></td>
+                <td><a class="btn btn-default" role="button" data-toggle="collapse" href="#xmrig" aria-expanded="true" aria-controls="collapseExample"><span data-tkey="showConfig">See more</span></a></td>
             </tr>
             <tr class="appConfig">
                 <td colspan="5">
-                    <div class="collapse" id="xmrstak">
+                    <div class="collapse" id="xmrig">
 		
-<pre><code>"pool_list": [
-    {
-        "pool_address": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
-        "wallet_address": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
-        "rig_id": "",
-        "pool_password": /* Solo Mining set [solo:] */"<span class="examplePassword">YOUR_WORKER_NAME</span>",
-        "use_nicehash": false,
-        "use_tls": false, /* Set to true if you are using an SSL port */
-        "tls_fingerprint": "",
-        "pool_weight": 1
-    },
-],
-"currency": "<span id="xmrstakAlgo"></span>",</code></pre>
+<pre><code>
+    "algo": "rx/arq",
+    "coin": null,
+    "url": "gntl.4assets.digital:40666",
+    "user": "YOUR_WALLET_ADDRESS",
+    "pass": "@worker-name",
+    "rig-id": null,
+    "nicehash": false,
+    "keepalive": true,
+</code></pre>
+
 
                     </div>
                 </td>
             </tr>
-	    
-	    <!-- XMRig -->
+            
+	    <!-- XMRig --
             <tr class="appInfo">
                 <td class="miningAppTitle">XMRig</td>
                 <td>CPU</td>
@@ -175,15 +175,14 @@
                 <td colspan="5">
                     <div class="collapse" id="xmrig">
 		
-<pre><code>"pools": [
+<pre><code>"pools_list": [
     {
         "url": "<span class="exampleHost">POOL_HOST</span>:<span class="examplePort">PORT</span>",
         "user": "<span class="exampleLogin">YOUR_WALLET_ADDRESS</span>",
         "pass": "<span class="examplePassword">YOUR_WORKER_NAME</span>",
         "keepalive": true,
-        "nicehash": false,
-        "variant": "trtl",
-        "algo": "cryptonight-pico/trtl"
+        "variant": "randomx",
+        "algo": "rx/arq"
     }
 ],</code></pre>
 
@@ -191,7 +190,7 @@
                 </td>
             </tr>
 
-	    <!-- XMRig-AMD -->
+	    <!-- XMRig-AMD --
             <tr class="appInfo">
                 <td class="miningAppTitle">XMRig-AMD</td>
                 <td>OpenCL (AMD)</td>
@@ -219,7 +218,7 @@
                 </td>
             </tr>
 
-	    <!-- XMRig-NVIDIA -->
+	    <!-- XMRig-NVIDIA --
             <tr class="appInfo">
                 <td class="miningAppTitle">XMRig-NVIDIA</td>
                 <td>Cuda (Nvidia)</td>
@@ -247,7 +246,7 @@
                 </td>
             </tr>
 
-	    <!-- XMRigCC -->
+	    <!-- XMRigCC --
             <tr class="appInfo">
                 <td class="miningAppTitle">XMRigCC</td>
                 <td>CPU</td>
@@ -275,7 +274,7 @@
                 </td>
             </tr>
 
-                    <!-- Team Red Miner -->
+                    <!-- Team Red Miner --
             <tr class="appInfo">
                 <td class="miningAppTitle">Team Red Miner</td>
                 <td>GPU</td>
@@ -291,7 +290,7 @@
 
                     </div>
                 </td>
-            </tr>
+            </tr>       -->
 	    
             </tbody>
         </table>

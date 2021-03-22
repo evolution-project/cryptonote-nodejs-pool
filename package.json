@@ -22,11 +22,13 @@
         "nodemailer": "2.7.2",
         "nodemailer-sendmail-transport": "*",
         "redis": "*",
+        "request": "^2.88.0",
+        "request-json": "^0.6.5",
+        "rxjs": "^6.5.4",
         "socket.io": "^2.1.1",
         "time-ago": "*",
-        "turtlecoin-multi-hashing": "https://github.com/turtlecoin/node8-multi-hashing.git",
-		"zeromq": "^5.2.0",
-		"rxjs": "^6.5.4"
+        "turtlecoin-multi-hashing": "git+https://github.com/turtlecoin/node8-multi-hashing.git",
+        "zeromq": "^5.2.0"
     },
     "engines": {
         "node": ">=8.11.3"
